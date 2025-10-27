@@ -41,7 +41,7 @@ jobs:
           VALIDATE_PYTHON_RUFF_FORMAT: true
 
       - name: Run Bandit Scanner
-        uses: reactive-firewall/python-bandit-scan@2.3
+        uses: reactive-firewall/python-bandit-scan@latest
         continue-on-error: true
         with:
           path: "."
