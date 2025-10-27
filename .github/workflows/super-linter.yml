@@ -39,4 +39,12 @@ jobs:
           VALIDATE_PYTHON_MYPY: true
           VALIDATE_PYTHON_RUFF: true
           VALIDATE_PYTHON_RUFF_FORMAT: true
-          
+
+      - name: Run Bandit Scanner
+        uses: reactive-firewall/python-bandit-scan@2.3
+        continue-on-error: true
+        with:
+          path: "."
+          level: high
+          confidence: high
+          exit_zero: true
