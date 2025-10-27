@@ -45,6 +45,6 @@ jobs:
         continue-on-error: true
         with:
           path: "."
-          level: high
-          confidence: high
+          level: low
+          confidence: low
           exit_zero: true
